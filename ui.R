@@ -15,6 +15,7 @@ countries = c("Finland", "Luxembourg",
 "Sweden", "Switzerland", "USA")
 
 
+github = "Github:  https://github.com/NB1/ShinyApp";  
 line1 = "We select a random color and country initially.  ";
 line2 = "You can change the color by sliding the three color ";
 line3 = "bars for the 3 primary colors.  You can pick countries ";
@@ -59,6 +60,7 @@ shinyUI(fluidPage(
     mainPanel(
       plotOutput("distPlot"),
       h2("Help for the application"),
+      p(github),
       p(paragraph)
     )
   )
